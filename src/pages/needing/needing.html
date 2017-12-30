@@ -4,12 +4,13 @@
      <ion-searchbar >
         
       </ion-searchbar>
-
+      <button>
        <ion-buttons >
        <button ion-button icon-only  (click)=" goToAdd()">
           <ion-icon name="add-circle">اضغط للتبرع بحاجة</ion-icon>
           </button>
         </ion-buttons >
+         </button>
 
     <ion-title  >  
     حاجات متبرع بها
@@ -34,8 +35,9 @@
             
 
 
-        <ion-avatar item-start>          
-          <img src="assets/imags/peson.svg">
+        <ion-avatar item-start>     
+        
+          <img src="assets/imgs/about.png">
         </ion-avatar>
 
 
@@ -44,9 +46,9 @@
              <h2> اسم الشخص المتبرع:{{item.payload.val().lastname}}</h2>
         <h2> عنوان الشخص المتبرع:{{item.payload.val().address}}</h2> 
                    <h2> رقم الهاتف:   {{item.payload.val().phone}}  </h2>
-            
+                 <h2> <ion-icon name="send "  >  اضغط لمعرفة تفاصيل اكثر  </ion-icon></h2>
                   
            </button>
-          </ion-list> 
+          </ion-list>
 
 </ion-content>
