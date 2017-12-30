@@ -13,18 +13,25 @@ page-needing {
          
                  .title{
                        text-align: center;
-                       padding-bottom: 25px;
+                       padding-bottom: 30px;
+                       color :#127bca;
                 }
                 
 
                 .ion-searchbar{
                  text-align: right;
-                 color:#04528d;
+                 color:#127bca;
                 }
 
-                h2{
-                    color: #04528d;
-                  }    
+                ion-icon{
+                    color: #127bca;
+                   // margin-top: 20px;
+                  }  
+
+                  ion-buttons{
+                   color :#127bca;
+                  // margin-top: 20px;
+                  }      
 
 
 }
