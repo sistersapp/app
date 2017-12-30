@@ -2,22 +2,7 @@
 page-needing {
 
     
-    .label{
-        padding-top: 0;
-        padding-right: 10px;
-        color:black;
-        font-weight: bold;
-       
-         } 
-
-         .input{
-            background-color:rgb(253, 253, 253);
-            margin:5px;
-            border-radius: 25px;
-            color:black;
-            padding-right: 5px;
-           // border:medium none;
-             }
+   
 
              .button{
                 border-radius: $button-md-border-radius;
@@ -25,11 +10,7 @@ page-needing {
             }
 
 
-            .ion-list{
-                padding-top:10px;
-                //color:yellowgreen;
-                 }
-
+         
                  .title{
                        text-align: center;
                        padding-bottom: 25px;

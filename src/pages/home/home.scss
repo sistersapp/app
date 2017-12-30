@@ -1,10 +1,16 @@
-page-home {
+.ios, .md{
+ page-home {
 
    .ion-button{     
-    height:40px;
-    
+    height:100px;
+    width: 50px;
+   margin-left:25; 
+   margin-right:25;
+   border-radius: 50px;
    }
 
 
 
+
+}
 }
