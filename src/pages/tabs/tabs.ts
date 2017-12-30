@@ -15,12 +15,13 @@ export class TabsPage {
 
   tab1Root = HomePage;
   tab2Root =  HumancasePage;
-  tab3Root =AddhumancasesPage; 
+  tab3Root =AddhumancasesPage;  
   tab4Root = MapPage;
   tab5Root =  NeedingPage;
   tab6Root =  AddneedingPage;
   tab7Root = AboutPage;
   tab8Root = ContactPage;
+  
   constructor() {
 
   }

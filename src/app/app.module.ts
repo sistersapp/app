@@ -15,6 +15,23 @@ import {MapPage }  from  '../pages/map/map';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { AngularFireModule} from 'angularfire2';
+ import { AngularFireDatabaseModule,AngularFireDatabase } from 'angularfire2/database';
+ import { AngularFireAuthModule } from 'angularfire2/auth';
+ import { AngularFirestore  } from 'angularfire2/firestore';
+
+ export const  firebaseConfig  = {
+  apiKey: "AIzaSyA4F5y8hAZEw1J9hNJIt8LiSZHMWcG8DAQ",
+  authDomain: "app1-feb95.firebaseapp.com",
+  databaseURL: "https://app1-feb95.firebaseio.com",
+  projectId: "app1-feb95",
+  storageBucket: "",
+  messagingSenderId: "1085471961036"
+};
+
+
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -30,7 +47,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule 
   ],
   bootstrap: [IonicApp],
   entryComponents: [
