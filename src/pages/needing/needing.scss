@@ -7,6 +7,7 @@ page-needing {
              .button{
                 border-radius: $button-md-border-radius;
                 padding-top: 40px;
+                
             }
 
 
@@ -14,24 +15,36 @@ page-needing {
                  .title{
                        text-align: center;
                        padding-bottom: 30px;
-                       color :#127bca;
+                       color :#1d93ec;
                 }
                 
 
                 .ion-searchbar{
                  text-align: right;
-                 color:#127bca;
+                 color:#2093eb;
                 }
 
                 ion-icon{
-                    color: #127bca;
-                   // margin-top: 20px;
+                    color: #178ce6;
+                
+                
+                    text-align: center 
+                    
                   }  
 
                   ion-buttons{
-                   color :#127bca;
-                  // margin-top: 20px;
-                  }      
+                   color :#1188e2;
+            
+                  // margin-left: 15px;
+                  // height:10px; 
+
+                  // margin-top: 5px;                   
+                  
+                  }     
+               button{
+                border-radius: 50px;
+                text-align: center; 
+               }    
 
 
 }

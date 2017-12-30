@@ -7,11 +7,12 @@ page-addneeding {
     .title{
         text-align: center;
         padding-bottom: 10px;
+        color :#127bca;
     }
         .label{
             padding-top: 0;
             padding-right: 10px;
-            color:black;
+            color:#127bca;
             font-weight: bold;
            
              } 
@@ -27,7 +28,7 @@ page-addneeding {
            background-color:rgb(253, 253, 253);
            margin:5px;
            border-radius: 25px;
-           color:black;
+           color:#127bca;
            padding-right: 5px;
            border:medium none;
             }
@@ -44,20 +45,24 @@ page-addneeding {
            background-color: #f8f8f8;
            resize: none;
        }
-       .button{
+       button{
            border-radius: $button-md-border-radius;
+           margin-top: 20px;
        }
        
        
-           
-
-           
+      
             
 
-            ion-buttons {
-                color :#127bca;
-            } 
+          
+            ion-title{
+                color:#127bca;  
 
+            }
+
+            ion-icon{
+                color:#1993f0; 
+            }
 
 
 
