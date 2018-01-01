@@ -29,7 +29,7 @@ $card-ios-margin-right:0px;
 $item-ios-avatar-size:4rem !default;
 $card-md-background-color	:#fff;
 $font-family-md-base:"Roboto", "Helvetica Neue", sans-serif	;	
- $searchbar-ios-input-search-icon-color:#04528d;
+ $searchbar-ios-input-search-icon-color:#127bca;
 
 
 // Named Color Variables
@@ -42,14 +42,14 @@ $font-family-md-base:"Roboto", "Helvetica Neue", sans-serif	;
 
 $colors: (
   primary:    #488aff,
-  secondary:  #0c3317,
+  secondary:  #71f797,
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:        rgb(7, 7, 7),
 
   twitter: (
     base: #04528d,
-    contrast:  #666161
+    contrast: rgb(204, 204, 204)
 
   )
 );

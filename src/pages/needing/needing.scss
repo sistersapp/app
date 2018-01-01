@@ -4,47 +4,76 @@ page-needing {
     
    
 
-             .button{
-                border-radius: $button-md-border-radius;
-                padding-top: 40px;
+            // .button{
+              //  border-radius: $button-md-border-radius;
+              //  padding-top: 40px;
                 
-            }
+            //}
 
 
          
-                 .title{
-                       text-align: center;
-                       padding-bottom: 30px;
-                       color :#1d93ec;
-                }
+                .title{
+                     text-align: center;
+                      
+                     color : #178ce6; 
+                      margin-bottom: 30px;
+                      //padding-top: 1px;
+                      padding-bottom: 40px; 
+                 }
+
+                //ion-title{
+                  //  margin-bottom: 30px; 
+                //}
+                     
+                     
+                
                 
 
-                .ion-searchbar{
+                ion-searchbar{
                  text-align: right;
                  color:#2093eb;
+                 margin-bottom: 50px;
+            
+                 margin-top: 30px;
+        
                 }
 
                 ion-icon{
-                    color: #178ce6;
-                
+                    color: #178ce6;                
                 
                     text-align: center 
                     
                   }  
 
-                  ion-buttons{
-                   color :#1188e2;
-            
-                  // margin-left: 15px;
-                  // height:10px; 
+                  ion-button{
+                
+                    padding-bottom: 10px;
+                    text-align: center ;
+                    padding-top: 10px;
+                   
+                }  
 
-                  // margin-top: 5px;                   
-                  
-                  }     
                button{
-                border-radius: 50px;
-                text-align: center; 
-               }    
+                border-radius:1cm;
+               text-align: center;               
+                padding-bottom: 10px;
+                  width: 100px;
+               }  
+               ion-navbar{
+                height: 100px;
+            }
+            
+            ion-avatar{           
+            
+                color:#1188e2 ;
+                padding-top: 5px;
+                margin-bottom: 5px;
+                margin-top: 10px;
+                margin-right:0px;
+                margin-left:350px; 
+            }
+             
+               
 
 
 }

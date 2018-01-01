@@ -1,25 +1,29 @@
 
 <ion-header>
-  <ion-navbar  >
+  <ion-navbar >
+
+      <ion-buttons start left>
      <ion-searchbar >
         
       </ion-searchbar>
-
+      </ion-buttons>
+        
+     
       
-      <ion-buttons  >
-       <button  (click)=" goToAdd()">
-          <ion-icon name="add-circle"><h2> اضغط للتبرع
-          
-         بحاجة
-          </h2>
-            
-          </ion-icon>
-          </button>
-        </ion-buttons>
+      <!-- <button  (click)=" goToAdd()">
+          </button>-->
+        
+          <ion-avatar item-start left>
+
+          <button ion-button round   (click)=" goToAdd()">اضغط للتبرع
+          بحاجة</button>
+       
+          </ion-avatar>
+        
         
          
 
-    <ion-title color= "base">  
+    <ion-title color= "#1d93ec">  
     حاجات متبرع بها
     </ion-title>
 
@@ -49,9 +53,9 @@
 
        
           <h2>اسم الحاجة :{{item.payload.val().firstname}} </h2>
-             <h2> اسم الشخص المتبرع:{{item.payload.val().lastname}}</h2>
-        <h2> عنوان الشخص المتبرع:{{item.payload.val().address}}</h2> 
-                   <h2> رقم الهاتف:   {{item.payload.val().phone}}  </h2>
+             <h2> اسم الشخص المتبرع :{{item.payload.val().lastname}}</h2>
+        <h2> عنوان الشخص المتبرع :{{item.payload.val().address}}</h2> 
+                   <h2> رقم الهاتف :{{item.payload.val().phone}}  </h2>
                     <h2> <ion-icon name="send"></ion-icon> اضغط لمعرفة تفاصيل اكثر</h2>
            </button>
           </ion-list>
