@@ -20,13 +20,14 @@ import { AngularFireModule} from 'angularfire2';
  import { AngularFireAuthModule } from 'angularfire2/auth';
  import { AngularFirestore  } from 'angularfire2/firestore';
 
- export const  firebaseConfig  = {
-  apiKey: "AIzaSyA4F5y8hAZEw1J9hNJIt8LiSZHMWcG8DAQ",
-  authDomain: "app1-feb95.firebaseapp.com",
-  databaseURL: "https://app1-feb95.firebaseio.com",
-  projectId: "app1-feb95",
-  storageBucket: "",
-  messagingSenderId: "1085471961036"
+ export const  firebaseConfig = {
+  apiKey: "AIzaSyA0VKlfnYU8Oe4RS6TRu_ONiK9tsJF2-8E",
+  authDomain: "humncases.firebaseapp.com",
+  databaseURL: "https://humncases.firebaseio.com",
+  projectId: "humncases",
+  storageBucket: "humncases.appspot.com",
+  messagingSenderId: "424226518349"
+
 };
 
 
