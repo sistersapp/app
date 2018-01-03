@@ -1,12 +1,7 @@
 
-<ion-header>
-  <ion-navbar >
+       <ion-header>
 
-   
-     
-      
-      <!-- <button  (click)=" goToAdd()">
-          </button>-->
+         <ion-navbar >      
         
           <ion-avatar item-start left>
 
@@ -18,37 +13,42 @@
         
          
 
-    <ion-title color= "#1d93ec">  
-    حاجات متبرع بها
-    </ion-title>
+       <ion-title color= "#1d93ec">  
+          حاجات متبرع بها
+         </ion-title>
 
-    <ion-buttons end  >
-      <button ion-button icon-only (click)="goToMain()">
+         <ion-buttons end  >
+         <button ion-button icon-only (click)="goToMain()">
           <ion-icon name="undo"> رجوع </ion-icon>
-      </button>
-    </ion-buttons>
+        </button>      
+       </ion-buttons>
 
-  </ion-navbar>
-</ion-header>
+
+       </ion-navbar>
+     </ion-header>
 
 
 <ion-content padding>
-    <ion-buttons start left>
+
+
+   
         <ion-searchbar >
            
          </ion-searchbar>
-         </ion-buttons>
+         
+
            
 
-    <ion-list>        
+       <ion-list>        
   
  
-        <button ion-item *ngFor="let item of items$   | async json" >
+        <button ion-item *ngFor="let item of items$   | async json"  (click)="itemSelected(item.payload.key,item.payload.val().firstname,item.payload.val().lastname,item.payload.val().address,item.payload.val().phone,item.payload.val().infor)">
+          
             
 
 
         <ion-avatar item-start>             
-          <img src="assets/imgs/about.png">
+          <img src="assets/imgs/about4.png">
         </ion-avatar>
 
 
@@ -59,6 +59,8 @@
                    <h2> رقم الهاتف :{{item.payload.val().phone}}  </h2>
                     <h2> <ion-icon name="send"></ion-icon> اضغط لمعرفة تفاصيل اكثر</h2>
            </button>
+
+           
           </ion-list>
 
 </ion-content>

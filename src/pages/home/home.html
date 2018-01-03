@@ -21,10 +21,10 @@
             <ion-row>
 
               <ion-col>
-                <button >
+                <button  (click)= "goToMap()">
                    
-                    <img src="assets/imgs/map2.jpeg" width="50px" height="50px">
-                    خارطة التبرع
+                <h6>   <img src="assets/imgs/map5.jpeg" width="70px" height="70px">
+                       خارطة التبرع </h6>
                   
                 </button>
             </ion-col>
@@ -33,9 +33,10 @@
              
 
               <ion-col>
-                    <button >
-                            <ion-icon name="home"></ion-icon>
-                            حالات انسانة
+                    <button  (click)=" goToHumancase()">
+                        <h6>   <img src="assets/imgs/per2.jpeg" width="70px" height="70px">                        
+                                 حالات انسانية </h6>
+
                           </button>
               </ion-col>
 
@@ -45,16 +46,19 @@
                 <ion-row>
 
                 <ion-col>
-                        <button >
-                        حاجات متبرع بها
-                                <ion-icon name="home"></ion-icon>
-                            </button>
-              </ion-col>
+                     <button  (click)="goToNeeding()"> 
+                      <h6> <img src="assets/imgs/need.png" width="70px" height="70px">
+                            تبرع بحاجة </h6>
+                        </button>
+                 </ion-col>
+
 
               <ion-col>
-                    <button >
-                            <ion-icon name="home"></ion-icon>
-                            عن التطبيق
+
+                    <button (click)="goToAbout()">
+                      <h6>  <img src= "assets/imgs/about3.png"  width="70px" height="70px">
+                            عن التطبيق </h6>
+
                           </button>
            
               </ion-col>

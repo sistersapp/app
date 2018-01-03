@@ -11,7 +11,8 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import {  NeedingPage }  from  '../pages/needing/needing';
 import {AddneedingPage }  from  '../pages/addneeding/addneeding';
-import {MapPage }  from  '../pages/map/map';
+import  {ShowneedingPage }  from  '../pages/showneeding/showneeding';
+import {MapPage}  from  '../pages/map/map';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -44,7 +45,8 @@ import { AngularFireModule} from 'angularfire2';
     AddneedingPage,
     MapPage,
     AddhumancasesPage,
-    HumancasePage
+    HumancasePage,
+    ShowneedingPage
   ],
   imports: [
     BrowserModule,
@@ -64,7 +66,8 @@ import { AngularFireModule} from 'angularfire2';
     AddneedingPage,
     MapPage,
     AddhumancasesPage ,
-    HumancasePage
+    HumancasePage,
+    ShowneedingPage
   ],
   providers: [
     StatusBar,

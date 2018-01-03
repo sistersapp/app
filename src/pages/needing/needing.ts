@@ -12,6 +12,8 @@ import firebase from 'firebase';
 
 import { HomePage } from '../home/home';
 import {AddneedingPage }  from  '../addneeding/addneeding';
+import { ShowneedingPage }  from  '../showneeding/showneeding';
+
 
 @IonicPage()
 @Component({
@@ -21,7 +23,7 @@ import {AddneedingPage }  from  '../addneeding/addneeding';
 export class NeedingPage {
 
   itemsRef: AngularFireList<any>;
-  devices: Observable<any[]>;//employees 
+  devices: Observable<any[]>;
   
   
   items$: Observable<AngularFireAction<firebase.database.DataSnapshot>[]>; 
@@ -34,7 +36,7 @@ export class NeedingPage {
   
 
     this.itemsRef =  af.list('/device')
-    this.devices= this.itemsRef.valueChanges() ;//employees 
+    this.devices= this.itemsRef.valueChanges() ;
  
    
  
@@ -50,12 +52,29 @@ export class NeedingPage {
        console.log(action.type);
        console.log(action.key);
        console.log(action.payload.val());
-     }) ; 
+     }); 
   
    });
 
-
   }
+
+  itemSelected(key, firstname, lastname,address, phone,infor ){
+    // console.log(key, firstname, lastname, address, phone, infor);
+    this.navCtrl.push(ShowneedingPage,{
+      key : key,
+      firstname : firstname,
+      lastname : lastname,
+      address :address,    
+      phone : phone ,
+      infor:infor
+          });  
+        }
+
+
+
+
+
+
 
 
 
@@ -72,6 +91,7 @@ export class NeedingPage {
     console.log('ionViewDidLoad NeedingPage');
   }
 
+  
 
 
 }
