@@ -7,6 +7,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import {  HumancasePage } from '../pages/humancase/humancase';
 import {  AddhumancasesPage } from '../pages/addhumancases/addhumancases';
+import { ShowhumancasePage } from '../pages/showhumancase/showhumancase';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import {  NeedingPage }  from  '../pages/needing/needing';
@@ -43,10 +44,12 @@ import { AngularFireModule} from 'angularfire2';
     TabsPage,
     NeedingPage,
     AddneedingPage,
+    ShowneedingPage,
     MapPage,
     AddhumancasesPage,
     HumancasePage,
-    ShowneedingPage
+    ShowhumancasePage
+   
   ],
   imports: [
     BrowserModule,
@@ -64,10 +67,13 @@ import { AngularFireModule} from 'angularfire2';
     TabsPage,
     NeedingPage,
     AddneedingPage,
+    ShowneedingPage,
     MapPage,
     AddhumancasesPage ,
     HumancasePage,
-    ShowneedingPage
+    ShowhumancasePage
+   
+   
   ],
   providers: [
     StatusBar,
