@@ -4,13 +4,11 @@ page-needing {
 
          
                 .title{
-                     text-align: center;
-                      
+                     text-align: center;                      
                      color : #178ce6; 
-                     margin-bottom:40px;
-                      //padding-top: 1px;
-                      padding-bottom: px;
-                     // margin-top:25px ; 
+                     margin-bottom:40px;                      
+                      padding-bottom:10 px;
+                      margin-top:0px ; 
                  }
 
               
@@ -34,32 +32,36 @@ page-needing {
                     
                   }  
 
-                  ion-button{
+                 .ion-button {
                 
-                   // padding-bottom: 10px;
+                    padding-bottom: 5px;
                     text-align: center ;
-                    padding-top: 10px;
-                    margin-top:100px ;
-                    margin-bottom: 0px;
+                   padding-top: 10px;
+                    margin-top:10px ;
+                    margin-bottom: 100px;
                     width: 0px;
+                    border-radius: 25px;
+                    
                 }  
+
+              
+
+
+                 ion-buttons-end {
+                  margin-left: 10px;
+                 }
+
+
 
               
 
                ion-navbar{
                 height: 50px;
+            
+                
             }
             
-            ion-avatar{           
-            
-                color:#1188e2 ;
-                padding-top: 5px;
-                margin-bottom:0px;
-                margin-top: 40px;
-                margin-right:0px;
-                margin-left:350px; 
-            }
-             
+          
                
 
 
