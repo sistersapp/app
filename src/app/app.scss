@@ -16,7 +16,7 @@
 // automatically applied to the <body> element in the app.
 @font-face{
     // font-family: 'Reem Kufi', sans-serif;
-    // font-family: 'Amiri', serif;
+     font-family: 'Amiri', serif;
     
     font-family: 'cairo';
     src:url('../assets/fonts/Amiri.woff2');
@@ -25,3 +25,4 @@ body,span,button,h1,h2,h3,h4,h5,h6,p,ion-item,ion-title{
     font-family:'cairo' !important;
     // font-size: 16px;
 }
+    
