@@ -1,17 +1,17 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-title>
+    <ion-toolbar color="primary">
+      
+     <ion-title>
           حول التطبيق
       </ion-title>
-      <ion-buttons start>
-          <button ion-button icon-only color="royal" (click)="goToMain()" >
-            <div>
-            <ion-icon name="arrow-round-back">
-              
-            </ion-icon>
-            </div>
-          </button>
-        </ion-buttons>
+   
+   
+      <button ion-button clear  icon-start (click)="goToMain()">
+          <ion-icon name='ios-arrow-back'is-active="false" color="light"></ion-icon>
+          الرجوع
+        </button>
+     
+    
     </ion-toolbar>
   </ion-header>
 
@@ -20,14 +20,15 @@
 
     <ion-card class="aboutcard">
         <ion-card-title>
-          <ion-icon ios="ios-alert" md="md-alert"></ion-icon>
+           <h2>اهل الخير</h2>
+           <br>
           <p>مشروعنا مبادرة انسانيه غير حكومية ولا تسعى الربح , فكرتها لتأمين خدمات والمساعدات تستهدف الشباب والاطفال الايتام , والمسنين, والمعوقين في العراق وذوي الاحتياجات الخاصة.تهدف في الاساس الى عدد من الانشطة العامة او الخاصة بدون اي مصلحة تجارية اوهدف ربحي او الدعوة اليه او الانخراط فيه. نحاول عن طريق البرمجة ان نشارك في مجالات واسعه كالمساعدات الانسانية والبيئه وحماية الحقوق والتعليم والفنون والرعاية الصحية والقضايا الاجتماعية والمؤسسات الخيرية والسياسة والدين والبحوث زالرياضة وغيرها من المساعي.</p>
         </ion-card-title>
         
       </ion-card>
     
     
-        <ion-card>
+        <ion-card class="aboutcard">
           <ion-card-content>
             <br><br><br><br><br><br>
           <ion-row>
@@ -62,7 +63,7 @@
       </ion-col>
     </ion-row>
     <ion-row>
-        <ion-col><h3 text-center>version 1.0</h3></ion-col>
+        <ion-col><h3 text-center>v1.0</h3></ion-col>
         
     </ion-row>
     </ion-card-content>
