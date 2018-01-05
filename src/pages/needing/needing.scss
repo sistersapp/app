@@ -1,11 +1,11 @@
 
 page-needing {    
          
-                 .title{
-                   text-align: center;                
+                 //.title{
+                  // text-align: center;                
                    
                 
-                }        
+                //}        
                 
 
                .ion-searchbar{
@@ -28,15 +28,17 @@ page-needing {
                  }
 
 
-          .button{
-            border-radius:25px;  
-            background-color:white;
+         // .button{
+           // border-radius:25px;  
+           // background-color:white; 
           
-           
+          //}
+
+          ion-buttons end{
+            border-radius:25px;  
+            background-color:white; 
           
           }
 
-               
-
-
+        
 }

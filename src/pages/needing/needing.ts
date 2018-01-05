@@ -58,9 +58,9 @@ export class NeedingPage {
 
   }
 
-  itemSelected(key, firstname, lastname,address, phone,infor ){
+    itemSelected(key, firstname, lastname,address, phone,infor ){
     // console.log(key, firstname, lastname, address, phone, infor);
-    this.navCtrl.push(ShowneedingPage,{
+     this.navCtrl.push(ShowneedingPage,{
       key : key,
       firstname : firstname,
       lastname : lastname,

@@ -1,44 +1,36 @@
 
        <ion-header>
 
-         <ion-navbar color="primary">
-
-           <ion-grid>    
-            <ion-row>
-
-             
-            
-
-           <ion-avatar start>
-            <button ion-button  clear  icon-start   (click)=" goToAdd()">      
-               تبرع بحاجة
-              </button>   
-              </ion-avatar>  
-
-              
-              <ion-title >  
-                  حاجات متبرع بها
-                 </ion-title>
-               
+         <ion-navbar color="primary"> 
+           
           
-         <ion-buttons end  >
-         <button ion-button icon-only (click)="goToMain()">
-            <ion-icon name='ios-arrow-back'is-active="false" color="light"></ion-icon>
-            رجوع
-        </button>      
-       </ion-buttons >
+            <ion-buttons started >            
+                <button ion-button icon-only (click)="goToMain()">
+              <ion-icon name='ios-arrow-back'is-active="false" color="light"></ion-icon>                                 
+                  رجوع
+               </button> 
+             </ion-buttons >   
       
-      
-      </ion-row>
-        </ion-grid>  
-       
+             <ion-title >  
+                حاجات متبرع بها
+               </ion-title>           
+            
+               <ion-buttons end >       
+                 <button ion-button  clear  icon-end   (click)=" goToAdd()">
 
-
-       </ion-navbar>
+                    <ion-icon name=ios-add-circle large > تبرع بحاجة</ion-icon>
+                  </button>  
+                </ion-buttons  >       
+                 
+                   
+                
+          
+        
+     </ion-navbar>
      </ion-header>
 
 
-<ion-content padding>                
+     <ion-content padding>                
 
    
         <ion-searchbar >
@@ -64,9 +56,9 @@
              <h2> اسم الشخص المتبرع :{{item.payload.val().lastname}}</h2>
         <h2> عنوان الشخص المتبرع :{{item.payload.val().address}}</h2> 
             <h2> رقم الهاتف :{{item.payload.val().phone}}  </h2>
-         <!-- <h2><ion-icon name='ios-arrow-back'is-active="false" color="light"></ion-icon> اضغط لمعرفة تفاصيل اكثر</h2>-->
+        
 
-          <button ion-button clear item-end> لتفاصيل اكثر</button>
+           <button ion-button clear item-end> لتفاصيل اكثر</button>
   
 
            </button>
