@@ -1,7 +1,7 @@
 
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>تفاصيل اكثر عن الحالة</ion-title>
   </ion-navbar>
 
@@ -14,48 +14,47 @@
 
         <ion-item>
             <ion-avatar item-start>             
-                <img src="assets/imgs/about4.png">
+                <img src="assets/imgs/">
               </ion-avatar>
       
            <h1> {{myInfo.firstname}}</h1>    
           </ion-item>
     
-        <img src="assets/imgs/img/info.jpeg" >
+        <img src="assets/imgs/img/" >
 
         </ion-card>
 
 
-        <ion-card>
+           <ion-card>
 
             <ion-card-header>
-                <h1 text-right>نبذة مختصرة عن الحاجة</h1>
+                <h1 text-right>نبذة عن الحاجة </h1>
            </ion-card-header>
 
-        <ion-card-content>          
-          <h2>  {{myInfo.infor}} </h2>
-        </ion-card-content>
-      
-        <ion-row>
+          <ion-card-content>          
+            <p text-justify>  {{myInfo.infor}} </p>            
+             </ion-card-content> 
+        
+             
+             <ion-row>
 
           <ion-col>
-
-            <p text-right>  <ion-icon ios="ios-call" md="md-call">   </ion-icon>
-              {{myInfo.phone}}      </p> 
-
+            <p  text-right><ion-icon ios="ios-call" md="md-call">   </ion-icon>
+              {{myInfo.phone}} </p>
           </ion-col>
 
 
-          <ion-col>
+             <ion-col>
 
-              <p text-left>   <ion-icon ios="ios-compass" md="md-compass"> </ion-icon>                       
-                {{myInfo. address}} </p>
+              <p   text-left><ion-icon ios="ios-compass" md="md-compass"> </ion-icon>                       
+                {{myInfo.address}} </p>
             
-          </ion-col>
+             </ion-col>
 
          
         </ion-row>
       
-      </ion-card> 
+     </ion-card> 
     
 
 </ion-content>

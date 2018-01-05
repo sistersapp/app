@@ -1,67 +1,41 @@
 
 page-needing {    
-
-
          
-                .title{
-                     text-align: center;                      
-                     color : #178ce6; 
-                     margin-bottom:40px;                      
-                      padding-bottom:10 px;
-                      margin-top:0px ; 
-                 }
-
-              
-                     
-                     
+                 .title{
+                   text-align: center;                
+                   
                 
+                }        
                 
 
-                ion-searchbar{
+               .ion-searchbar{
                  text-align: right;
-                 color:#2093eb;  
+                color:#2093eb;  
                 
         
                 }
 
                 
-                ion-icon{
-                    color: #178ce6;                
+             
                 
-                    text-align: center 
-                    
-                  }  
 
-                 .ion-button {
-                
-                    padding-bottom: 5px;
-                    text-align: center ;
-                   padding-top: 10px;
-                    margin-top:10px ;
-                    margin-bottom: 100px;
-                    width: 0px;
-                    border-radius: 25px;
-                    
-                }  
 
               
 
-
-                 ion-buttons-end {
-                  margin-left: 10px;
+             ion-navbar{
+                height: 100px;            
+                
                  }
 
 
-
-              
-
-               ion-navbar{
-                height: 50px;
-            
-                
-            }
-            
+          .button{
+            border-radius:25px;  
+            background-color:white;
           
+           
+          
+          }
+
                
 
 

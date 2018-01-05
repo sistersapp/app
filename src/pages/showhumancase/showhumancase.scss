@@ -2,12 +2,13 @@
 .ios, .md
 {
 page-showhumancase {
-    ion-item  
-    {
+    ion-item  { 
+   
         background-color:$card-md-background-color	;
     }
-    ion-card
-    {
+
+    ion-card  {
+  
        background:$card-md-background-color ;
        max-height:500px;
        margin-bottom:0;
@@ -20,11 +21,18 @@ page-showhumancase {
        margin-right: $card-ios-margin-right;
        font-family: $font-family-md-base;
     }
-    .ion-avatar
-    {
+
+    .ion-avatar {
+   
         // size: $item-ios-avatar-size	;
         z-index: 89;
     }
+    
+   
+
+
+
+
   }
 }
 

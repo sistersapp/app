@@ -3,7 +3,7 @@
 
   ion-col{     
     height:100px;
-    width: 50px;
+    width: 100px;
    margin-left:25; 
    margin-right:25px;
    border-radius: 100px;
@@ -11,41 +11,40 @@
 
    button{
     height:100%;
-    width: 100%;
+    width:70%;
     margin-left:25; 
-    margin-right:0px;
+    margin-right:30px;
     border-radius: 100px;
     padding-top: 10px;
     padding-bottom:0px ;
     text-align: top;
     tab-size: 50px;
     font-weight: bold;
-    background-color:#9fa0a3 ;
+     background-color:#488aff ;
+   // background-color:#9fa0a3 ;
    color:white;
    }
 
 
    ion-title{
-     color:#127bca ;
+     
      font-weight: bold;
     
-   }
-
-
-
-   ion-header{   
-     background-color: #fae2e2 ;
-   }
+   }  
 
     
-img{
+  img{
 
- border-radius: 100px;
-   background-color:#127bca  ;
+   border-radius: 100px;
+   background-color:white ;
    }
 
   
   
+     ion-navbar{
+      height: 100px;            
+    
+      }
 
   
 

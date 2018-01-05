@@ -7,14 +7,17 @@ page-addneeding {
     .title{
         //text-align: center;
         padding-bottom: 10px;
-        color :#127bca;
-    }
+
+      }
+    
         .label{
+
             padding-top: 0;
             padding-right: 10px;
-            color:#127bca;
-            font-weight: bold;
-           
+            color:black;
+            font-weight: bold;            
+
+         
              } 
          
        .ion-list{
@@ -25,52 +28,51 @@ page-addneeding {
        
        
           .input{
-           background-color:rgb(253, 253, 253);
-           margin:5px;
-           border-radius: 25px;
-           color:#127bca;
-           padding-right: 5px;
-           border:medium none;
-            }
+            background-color:white;
+            margin:0; 
+            border-radius: 25px;
+            color:black;
+            padding-right: 5px;
+            border:2px;
+           
+
+
+           }
        
            
        
        .ion-textarea{
-           width: 100%;
-           height: 150px;
-           padding: 12px 20px;
-           box-sizing: border-box;
-           border: 2px solid #ccc;
-           border-radius: 4px;
-           background-color: #f8f8f8;
-           resize: none;
+
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+
+
+          
        }
        button{
-           border-radius: $button-md-border-radius;
+        border-radius: $button-md-border-radius;
            margin-top: 20px;
             margin-right:5px;
+            color:#127bca;
             
            
 
        }
        
        
-       
       
-            
+        
+      ion-navbar{
+     height: 100px;            
+                
+         }
 
-          
-            ion-title{
-                color:#127bca;  
-
-            }
-
-            ion-icon{
-                color:#1993f0; 
-         
-            }
-       
-     
 
 
 }
