@@ -2,15 +2,15 @@ page-addhumancases {
     .label{
         padding-top: 0;
         padding-right: 10px;
-        color:black;
+        color:#488aff;
         font-weight: bold;
-        
+        font-size: 15px;
        
          } 
      
    .ion-list{
-       padding-top:10px;
-       color:yellowgreen;
+       padding-top:10px    ;
+    
        
         }
    
@@ -22,9 +22,10 @@ page-addhumancases {
        border-radius: 25px;
        color:black;
        padding-right: 5px;
-       border:2px;
-    //    border:medium none;
-       border-color:#f53d3d;
+       font-size: 20px;
+       border: 1px solid#f53d3d;
+     
+    
         }
     .item{
           margin: 0;
@@ -48,10 +49,7 @@ page-addhumancases {
    .button{
        border-radius: $button-md-border-radius;
    }
-     //.button:hover{
-       // background-color:$button-md-background-color-hover;
-      
-   //}
+
    
 
 }
