@@ -2,26 +2,38 @@
        <ion-header>
 
          <ion-navbar color="primary"> 
-           
-          
-            <ion-buttons started >            
-                <button ion-button icon-only (click)="goToMain()">
+
+        
+                    <ion-title >  
+                        حاجات متبرع بها
+                       </ion-title>   
+
+           <ion-buttons started >            
+                <button ion-button icon-started (click)="goToMain()">
               <ion-icon name='ios-arrow-back'is-active="false" color="light"></ion-icon>                                 
                   رجوع
                </button> 
              </ion-buttons >   
-      
-             <ion-title >  
-                حاجات متبرع بها
-               </ion-title>           
-            
-               <ion-buttons end >       
-                 <button ion-button  clear  icon-end   (click)=" goToAdd()">
+           
 
-                    <ion-icon name=ios-add-circle large > تبرع بحاجة</ion-icon>
-                  </button>  
-                </ion-buttons  >       
-                 
+          <!--<ion-buttons start >       
+            <button ion-button  clear  icon-end   (click)=" goToAdd()">
+
+               <ion-icon name=ios-add-circle large > تبرع بحاجة</ion-icon>
+             </button>  
+           </ion-buttons >-->
+        
+             
+      
+                <button ion-button  clear  icon-end   (click)=" goToAdd()">
+                    تبرع بحاجة
+            <!-- <ion-icon name=ios-add-circle large ></ion-icon>-->
+                 </button>  
+                
+
+              
+              
+      
                    
                 
           
@@ -47,18 +59,18 @@
 
 
         <ion-avatar item-start>             
-          <img src="assets/imgs/about1.png">
+          <img src="assets/imgs/about1.png"  width="0px" height="0px" >
         </ion-avatar>
 
 
        
-          <h2>اسم الحاجة :{{item.payload.val().firstname}} </h2>
-             <h2> اسم الشخص المتبرع :{{item.payload.val().lastname}}</h2>
-        <h2> عنوان الشخص المتبرع :{{item.payload.val().address}}</h2> 
-            <h2> رقم الهاتف :{{item.payload.val().phone}}  </h2>
+          <h6>الحاجة:{{item.payload.val().firstname}} </h6>
+             <h6> المتبرع :{{item.payload.val().lastname}}</h6>
+        <h6> العنوان :{{item.payload.val().address}}</h6> 
+            <h6> الهاتف :{{item.payload.val().phone}}  </h6>
         
 
-           <button ion-button clear item-end> لتفاصيل اكثر</button>
+         <!--  <button ion-button clear item-end> لتفاصيل اكثر</button>-->
   
 
            </button>

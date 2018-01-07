@@ -33,14 +33,9 @@ page-addneeding {
             border-radius: 25px;
             color:black;
             padding-right: 5px;
-            border:2px;
-            border: 1px dashed rgb(230, 48, 48);
-            //border: 1px inset #f53d3d;
-     
-     
-
-
-           }
+            border:2px;          
+            border: 1px inset #f53d3d;
+            }
        
            
        
@@ -58,13 +53,10 @@ page-addneeding {
 
           
        }
-       button{
+
+       .button{
         border-radius: $button-md-border-radius;
-           margin-top: 20px;
-            margin-right:5px;
-            color:#127bca;
-            
-           
+         
 
        }
        
@@ -72,7 +64,7 @@ page-addneeding {
       
         
       ion-navbar{
-     height: 100px;            
+     height: 80px;            
                 
          }
 

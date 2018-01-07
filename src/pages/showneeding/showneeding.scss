@@ -1,46 +1,17 @@
 page-showneeding {
 
-    ion-item  { 
    
-        background-color:$card-md-background-color	;
-    }
-
-    ion-card  {
-  
-       background:$card-md-background-color ;
-       max-height:500px;
-       margin-bottom:0;
-       border: none;
-       padding-right:0;
-       padding-left: 0;
-       width:100%;
-       position: relative;
-       color:white;
-       margin-right: $card-ios-margin-right;
-       font-family: $font-family-md-base;
-    }
-
-    .ion-avatar {
-   
-        // size: $item-ios-avatar-size	;
-        z-index: 89;
-    }
-    
-
-
-
-
-
-
   p{
     margin-left: 10%;
     margin-right:0;
   }
+
   ion-icon{
     margin-left: 5%;
     margin-right:5%;
     margin-top:70px; 
    }
+   
 
   ion-col{
    height: 100%;
@@ -49,10 +20,16 @@ page-showneeding {
     
 
     ion-navbar{
-        height: 100px;            
+        height: 80px;            
         
      }
 
+     img{
 
+        border-radius: 100px;
+        background-color:rgb(240, 12, 12) ;
+        }
+      
+      
   
 }
