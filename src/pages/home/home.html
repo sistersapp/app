@@ -11,18 +11,22 @@
 
 <ion-content padding>
 
+ 
+
     
 
     <ion-card>
 
+     <ion-avatar>
     <img src="assets/imgs/info.jpeg"/>
-
-      </ion-card>
-
      
+    </ion-avatar>
+    </ion-card>
 
+
+        <ion-card>
       <ion-card-content>
-
+    
         <ion-grid>
     
             <ion-row>
@@ -30,7 +34,7 @@
               <ion-col>
                 <button  (click)= "goToMap()">
                    
-                  <h6> <img src="assets/imgs/map4.jpeg" width="30px" height="30px">
+                  <h6> <img src="assets/imgs/map4.jpeg" width="0px" height="0px">
                     خارطة التبرع  </h6> 
                   
                 </button>
@@ -41,7 +45,7 @@
 
               <ion-col>
                     <button  (click)=" goToHumancase()">
-                        <h6>   <img src="assets/imgs/ic3.png" width="30px" height="30px">                        
+                        <h6>   <img src="assets/imgs/ic3.png" width="0px" height="0px">                        
                                  حالات انسانية </h6>
 
                           </button>
@@ -54,34 +58,27 @@
 
                 <ion-col>
                      <button  (click)="goToNeeding()"> 
-                      <h6> <img src="assets/imgs/help.jpeg" width="30px" height="30px">
+                      <h6> <img src="assets/imgs/help.jpeg" width="0px" height="0px">
                             تبرع بحاجة </h6>
                         </button>
                  </ion-col>
 
 
               <ion-col>
-
                     <button (click)="goToAbout()">
-                      <h6>  <img src= "assets/imgs/per4.png"  width="30px" height="30px">
+                      <h6>  <img src= "assets/imgs/per4.png"  width="0px" height="0px">
                             عن التطبيق </h6>
 
-                          </button>
-           
+                          </button>           
               </ion-col>
 
               </ion-row>
            </ion-grid>
-
-
-
-
-
-
                
     </ion-card-content>
-
+      </ion-card>
 
   
 
 </ion-content>
+<ion-footer  color= "red" ></ion-footer>

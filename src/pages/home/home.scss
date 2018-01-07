@@ -10,10 +10,10 @@
    }
 
    button{
-    height:100%;
-    width:70%;
+    height:70%;
+    width:100%;
     margin-left:25; 
-    margin-right:30px;
+    margin-right:5px;
     border-radius: 100px;
     padding-top: 10px;
     padding-bottom:0px ;
@@ -45,15 +45,38 @@
   
   
      ion-navbar{
-      height: 100px;            
+      height: 80px;            
     
       }
       
-     background{
-       border:100px;
-       border-color: red;
-     } 
+    // background{
+      // border:100px;
+      // border-color: red;
+    // } 
 
+
+     ion-card  {
   
+      background:$card-md-background-color ;
+      max-height:500px;
+   //    margin-bottom:0;
+      border: none;
+      padding-right:0;
+      padding-left: 0;
+      width:100%;
+      position: relative;
+      color:white;
+      margin-right: $card-ios-margin-right;
+      font-family: $font-family-md-base;
+   }  
+   .hr{
+     //color:#488aff; 
+     border: 4px inset #f53d3d;
+
+   }
+
+   .ion-footer{
+     background-color: #488aff;
+   }
 
 }
