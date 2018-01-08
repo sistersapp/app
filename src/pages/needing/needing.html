@@ -11,23 +11,18 @@
           </ion-buttons>
             
     </ion-navbar>
-</ion-header>
+   </ion-header>
 
 
-     <ion-content padding>                
-
-   
+     <ion-content padding> 
+       
         <ion-searchbar >
            
          </ion-searchbar>
-
         
-       <ion-list>        
-  
+       <ion-list>    
  
-        <button ion-item *ngFor="let item of items$   | async json"  (click)="itemSelected(item.payload.key,item.payload.val().firstname,item.payload.val().lastname,item.payload.val().address,item.payload.val().phone,item.payload.val().infor)">
-          
-            
+            <button ion-item *ngFor="let item of items$   | async json"  (click)="itemSelected(item.payload.val().key,item.payload.val().firstname,item.payload.val().lastname,item.payload.val().address,item.payload.val().phone,item.payload.val().infor)">            
 
 
         <ion-avatar item-start>             
@@ -38,16 +33,16 @@
        
           <h6>الحاجة:{{item.payload.val().firstname}} </h6>
              <h6> المتبرع :{{item.payload.val().lastname}}</h6>
-        <h6> العنوان :{{item.payload.val().address}}</h6> 
-            <h6> الهاتف :{{item.payload.val().phone}}  </h6>
-        
+           <h6> العنوان :{{item.payload.val().address}}</h6> 
+              <h6> الهاتف :{{item.payload.val().phone}}  </h6>
+              <h5> اضغط لتفاصيل اكثر </h5>  
+                
 
-         <!--  <button ion-button clear item-end> لتفاصيل اكثر</button>-->
-  
+        
 
            </button>
 
            
           </ion-list>
 
-</ion-content>
+      </ion-content>
