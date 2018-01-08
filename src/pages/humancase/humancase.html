@@ -1,24 +1,22 @@
 
 <ion-header >
-    <ion-toolbar color="primary">
-        <!-- <ion-buttons start> -->
-                <button ion-button clear  icon-start (click)="goToMain()" >
-                  <ion-icon name="ios-arrow-back" is-active="false" color="light">
-                  </ion-icon>
+    <ion-navbar color="primary">
+        
+         <ion-title>أسماء الحالات</ion-title>
+      
+            <ion-buttons end>
+                 <button ion-button icon-only color="royal" (click)="goToaddcase()">
+            <ion-icon name="md-person-add"></ion-icon>
             </button>
-        <!-- </ion-buttons> -->
-  
-        <ion-title>حالات انسانيه</ion-title>
-          
-        <ion-buttons end>
-            <button ion-button icon-only color="royal" (click)="goToaddcase()">
-                <ion-icon name="md-person-add"></ion-icon>
-            </button>
-        </ion-buttons>
+           </ion-buttons>
      
-    </ion-toolbar>
-  </ion-header>
+    </ion-navbar>
+   </ion-header>
   
+
+
+
+
   <ion-content >
   
     <ion-list > 

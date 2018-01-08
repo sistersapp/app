@@ -1,45 +1,17 @@
 
-       <ion-header>
+ <ion-header>
 
-         <ion-navbar color="primary"> 
-
-        
-                    <ion-title >  
-                        حاجات متبرع بها
-                       </ion-title>   
-
-           <ion-buttons started >            
-                <button ion-button icon-started (click)="goToMain()">
-              <ion-icon name='ios-arrow-back'is-active="false" color="light"></ion-icon>                                 
-                  رجوع
-               </button> 
-             </ion-buttons >   
-           
-
-          <!--<ion-buttons start >       
-            <button ion-button  clear  icon-end   (click)=" goToAdd()">
-
-               <ion-icon name=ios-add-circle large > تبرع بحاجة</ion-icon>
-             </button>  
-           </ion-buttons >-->
-        
-             
-      
-                <button ion-button  clear  icon-end   (click)=" goToAdd()">
-                    تبرع بحاجة
-            <!-- <ion-icon name=ios-add-circle large ></ion-icon>-->
-                 </button>  
-                
-
-              
-              
-      
-                   
-                
-          
-        
-     </ion-navbar>
-     </ion-header>
+    <ion-navbar color="primary"> 
+     <ion-title >حاجات متبرع بها</ion-title>
+     
+          <ion-buttons end>
+            <button small outline ion-button color="light"  (click)="goToAdd()">
+              <ion-icon name='ios-add-circle' is-active="false" color="light">تبرع</ion-icon>
+            </button>
+          </ion-buttons>
+            
+    </ion-navbar>
+</ion-header>
 
 
      <ion-content padding>                
