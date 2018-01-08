@@ -1,82 +1,37 @@
 
  page-home {
 
-  ion-col{     
-    height:100px;
-    width: 100px;
-   margin-left:25; 
-   margin-right:25px;
-   border-radius: 100px;
-   }
-
-   button{
-    height:70%;
-    width:100%;
-    margin-left:25; 
-    margin-right:5px;
-    border-radius: 100px;
-    padding-top: 10px;
-    padding-bottom:0px ;
-    text-align: top;
-    tab-size: 50px;
+  
+  .ion-card {
+    position: relative;
+    text-align: center;
+    margin:0;
+  
+  }
+.ion-card , ion-card-content{
+  background-color: white;
+}
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
     font-weight: bold;
-     background-color:#488aff ;
-   // background-color:#9fa0a3 ;
-     color:white;
-     //border: 5px dashed rgb(230, 48, 48);
-     border: 4px inset #f53d3d;
+    color: #fff;
+  }
 
-   }
-
-
-   ion-title{
-     
-     font-weight: bold;
-    
-   }  
-
-    
-  img{
-
-   border-radius: 100px;
-   background-color:white ;
-   }
-
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 58%;
+    width: 100%;
+    color: #fff;
+  }
+ .ion-card-content{
+   background-color: white;
+ }
   
-  
-     ion-navbar{
-      height: 80px;            
-    
-      }
-      
-    // background{
-      // border:100px;
-      // border-color: red;
-    // } 
 
 
-     ion-card  {
-  
-      background:$card-md-background-color ;
-      max-height:500px;
-   //    margin-bottom:0;
-      border: none;
-      padding-right:0;
-      padding-left: 0;
-      width:100%;
-      position: relative;
-      color:white;
-      margin-right: $card-ios-margin-right;
-      font-family: $font-family-md-base;
-   }  
-   .hr{
-     //color:#488aff; 
-     border: 4px inset #f53d3d;
-
-   }
-
-   .ion-footer{
-     background-color: #488aff;
-   }
 
 }

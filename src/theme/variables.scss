@@ -9,7 +9,7 @@ $font-path: "../assets/fonts";
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
 // http://ionicframework.com/docs/theming/rtl-support/
-$app-direction: rtl;
+$app-direction:rtl;
 
 
 @import "ionic.globals";
@@ -23,15 +23,14 @@ $app-direction: rtl;
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
 $background-color:#F0F1F5;
-$button-md-background-color-hover :red;
 $button-md-border-radius:25px;
 $card-ios-margin-right:0px;
 $item-ios-avatar-size:4rem !default;
 $card-md-background-color	:#fff;
 $font-family-md-base: 'Cairo', sans-serif;
- $searchbar-ios-input-search-icon-color:#127bca;
+$searchbar-ios-input-search-icon-color:#127bca;
 
- $fab-list-button-background-color:#f53d3d;
+$fab-list-button-background-color:#f53d3d;
 $fab-mini-size:44px;
 
 

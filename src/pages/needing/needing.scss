@@ -1,51 +1,44 @@
 
 page-needing {    
-         
-                 .title{
-                   text-align: center;                
-             
+    
+  .ion-buttons,button{
+    background-color:#5196DE;
+} 
+  
+
+           
                 
-                }        
+ .ion-searchbar{
+    text-align: right;
+     color:#2093eb;  
                 
-
-               .ion-searchbar{
-                 text-align: right;
-                color:#2093eb;  
-                
-        
-                }
+     }
 
                 
-             
-                .img{
+     .img{
 
-                  border-radius: 100px;
-                  background-color:rgb(240, 12, 12) ;
-                  
-                  }
-                
+     border-radius: 100px;
+     background-color:rgb(240, 12, 12) ;
+                         
+     }
 
+     
+     ion-icon{
+      color: white;                
+      
+      text-align: center ;
+      
+    }
 
-              
-
-
-          .button{
-            border-radius:25px;  
-            background-color:white; 
-            width:75px ;
-            height:20px ;  
+  // .button{
+  //    border-radius:25px;  
+  //    background-color:white; 
+  //    width:75px ;
+  //    height:20px ;  
             
-        
-          
-          }
+  //     }
 
-         // ion-buttons end{
-
-           // margin-right:300px;
-           // margin-left:0px; 
-                   
-
-          //}
+         
 
         
 }
