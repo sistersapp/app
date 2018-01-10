@@ -11,10 +11,8 @@ import {
   MarkerOptions,
   Marker
  } from '@ionic-native/google-maps';
- import { Geolocation } from '@ionic-native/geolocation';
- import { Http  } from '@angular/http';
-import'rxjs/add/operator/map';
 
+ 
 
  declare var google;
 
@@ -32,8 +30,8 @@ export class MapPage {
   long=0;
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public platform:Platform,
-   private http: Http  ,public geolocation: Geolocation ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public platform:Platform
+    ) {
 
     platform.ready().then(()=>{ 
       this.loadmap();
@@ -44,14 +42,6 @@ export class MapPage {
 
 
      loadmap(){
-  
-//**add gps **/
-     //this.geolocation.getCurrentPosition().then((resp) => {
-     // this.lat= resp.coords.latitude
-     //this.long= resp.coords.longitude
-     //**add gps **/
-
-
    this.map = new GoogleMap('map',{
     'controls': {
    'compass':true,
@@ -69,8 +59,7 @@ export class MapPage {
      target: {
        lat: 43.0741904,
       lng: -89.3809802
-      // lat: this.lat,
-      // lng: this.long
+     
      },
      zoom: 18,
      tilt: 30,
@@ -78,12 +67,6 @@ export class MapPage {
      }
       });
    
-//**add gps **/
-  //}).catch((error) => {
-  // console.log('Error getting location', error);
- //}); 
-
-//**add gps **/
 
 
    this.map.one(GoogleMapsEvent.MAP_READY).then(()=>{
@@ -92,34 +75,6 @@ export class MapPage {
   }
 
    
-//**add markers **/
-
-   ionviewDidload(){   
-     this.getMarkers();
-   }   
-   
-   
-   getMarkers(){
-     this.http.get('assets\data\markers.json').map((res)=>res.json()).subscribe(data=>{
-       this.addMarkersMap(data);
-     }); 
-   }
-   
-   addMarkersMap(markers){
-   for(let marker of markers){
-     var loc ={lat:marker.latitude ,lng:marker.longitude}
-     marker = new google.maps.Marker({
-       position : loc,
-       map: this.map,
-       title:marker.name,
-       label:marker.content
-   
-     });
-   
-   }
-   }
-  //**add markers **/
-
 
 
 
