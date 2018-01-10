@@ -16,7 +16,7 @@ import {
 import'rxjs/add/operator/map';
 
 
-declare var google;
+ declare var google;
 
 
 
