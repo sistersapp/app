@@ -22,6 +22,10 @@ import { AngularFireModule} from 'angularfire2';
  import { AngularFireAuthModule } from 'angularfire2/auth';
  import { AngularFirestore  } from 'angularfire2/firestore';
 
+
+ import { Geolocation } from '@ionic-native/geolocation';
+ import { HttpModule } from '@angular/http';
+
   
 
  export const  firebaseConfig = {
@@ -53,7 +57,7 @@ import { AngularFireModule} from 'angularfire2';
     ShowhumancasePage
    
   ],
-  imports: [
+  imports: [   
     BrowserModule,
     IonicModule.forRoot(MyApp,{
       backButtonText: 'الرجوع',
@@ -61,7 +65,8 @@ import { AngularFireModule} from 'angularfire2';
     }),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    AngularFireAuthModule 
+    AngularFireAuthModule ,
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -81,6 +86,7 @@ import { AngularFireModule} from 'angularfire2';
    
   ],
   providers: [   
+    Geolocation,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}

@@ -8,9 +8,13 @@
 
 <ion-content>
   <ion-list>
-    <ion-item>
 
-     
-    </ion-item>
-  </ion-list>
+    <ion-item  *ngFor="let item of result">      
+  <h2>{{item.name}} </h2>
+  <p>{{item.content}} </p>
+   <p>{{item.addrees}}</p>
+      </ion-item>
+      
+
+      </ion-list>
 </ion-content>
