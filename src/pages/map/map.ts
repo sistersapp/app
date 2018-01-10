@@ -12,7 +12,7 @@ import {
   Marker
  } from '@ionic-native/google-maps';
  import { Geolocation } from '@ionic-native/geolocation';
- import { HttpModule  } from '@angular/http';
+ import { Http  } from '@angular/http';
 import'rxjs/add/operator/map';
 
 
@@ -33,7 +33,7 @@ export class MapPage {
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams,public platform:Platform,
-   private http: HttpModule   ,public geolocation: Geolocation ) {
+   private http: Http  ,public geolocation: Geolocation ) {
 
     platform.ready().then(()=>{ 
       this.loadmap();
