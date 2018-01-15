@@ -10,17 +10,16 @@
 
 <ion-content padding>
 
-    <ion-card   >
+    <ion-card    >
 
-        <ion-item>
+        <ion-item   color="white">
             <ion-avatar item-start>             
                 <img src="assets/imgs/about1.png">
               </ion-avatar>
       
-           <h1> {{myInfo.firstname}}</h1>    
-          </ion-item>
-          
-        <!--<img src="assets/imgs/" >-->
+           <h2> الحاجة : {{myInfo.firstname}}</h2>    
+           <h2> المتبرع : {{myInfo.lastname}}</h2> 
+          </ion-item>     
          
         </ion-card>
 
@@ -33,24 +32,19 @@
            </ion-card-header>
 
         <ion-card-content>  
-         <!-- <ion-card-content>-->          
-            <p text-justify>  {{myInfo.infor}} </p>            
-             <!-- </ion-card-content> -->
-        
+                 
+          <p text-justify>  {{myInfo.infor}} </p>   
              
              <ion-row>
 
           <ion-col>
             <p  text-right><ion-icon ios="ios-call" md="md-call"  color="danger" >   </ion-icon>
               {{myInfo.phone}} </p>
-          </ion-col>
-
+               </ion-col>  
 
              <ion-col>
-
-              <p   text-left><ion-icon ios="ios-compass" md="md-compass"  color="danger" > </ion-icon>                       
-                {{myInfo.address}} </p>
-            
+              <p   text-left><ion-icon ios="ios-compass" md="md-compass"  color="primary" > </ion-icon>                       
+                {{myInfo.address}} </p>            
              </ion-col>
          
         </ion-row>

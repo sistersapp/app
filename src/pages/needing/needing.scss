@@ -6,15 +6,22 @@ page-needing {
 } 
   
 
-           
-                
- .ion-searchbar{
-    text-align: right;
-     color:#2093eb;     
-              
-     }
+.caselist{
+  background-color: white;
+}      
 
-                
+  .item {
+   margin-top:0;  
+   
+   color:black; 
+   padding: 10px;
+   }
+
+   .ion-navbar{        
+    margin: 10px;
+   }
+
+               
      .img{
 
      border-radius: 100px;
@@ -24,17 +31,15 @@ page-needing {
 
      
      ion-icon{
-      color: white; 
-      
+      color: white;     
       
     }
 
-
-     h5{
-       color: #2093eb;
+  h2{
+    color:black;
      }
-
-  
+    
+   
          
 
         

@@ -48,16 +48,6 @@ export class MapPage {
 
      loadmap(){
 
-  // add gps //
-     //this.geolocation.getCurrentPosition().then((resp) => {
-     // this.lat =resp.coords.latitude
-     // this.long =resp.coords.longitude
-    // add gps //  
-      
-
-
-
-
 
    this.map = new GoogleMap('map',{
     'controls': {
@@ -74,10 +64,9 @@ export class MapPage {
       },
     'camera':{
      target: {
-      // lat: 43.0741904,
-      //lng: -89.3809802
-      lat: this.lat,
-      lng: this.long 
+       lat: 43.0741904,
+      lng: -89.3809802
+      
      },
      zoom: 18,
      tilt: 30,
@@ -85,12 +74,7 @@ export class MapPage {
      }
       });
    
-   //add gps//
-    // }).catch((error) => {
-    // console.log('Error getting location', error);
-    // });  
-   //add gps//
-
+  
 
    this.map.one(GoogleMapsEvent.MAP_READY).then(()=>{
      console.log('Map is ready .... :)');
